@@ -14,15 +14,15 @@ function inputSoNgayLam () {
 //BT2: Tính trung bình cộng 5 số
 function average () {
     //input
-    var n1 = document.getElementById('n1').value;
-    var n2 = document.getElementById('n2').value;
-    var n3 = document.getElementById('n3').value;
-    var n4 = document.getElementById('n4').value;
-    var n5 = document.getElementById('n5').value;
+    var n1 = document.getElementById('n1');
+    var n2 = document.getElementById('n2');
+    var n3 = document.getElementById('n3');
+    var n4 = document.getElementById('n4');
+    var n5 = document.getElementById('n5');
     //output
     var average = 0;
     var soLuongInput = 5;
-
+    // var average = ( parseFloat(n1) + parseFloat(n2) + parseFloat(n3) + parseFloat(n4) + parseFloat(n5)) / 5 ;
     var sum = parseFloat(n1) + parseFloat(n2) + parseFloat(n3) + parseFloat(n4) + parseFloat(n5);
     
     var average =  sum / parseFloat(soLuongInput) ;

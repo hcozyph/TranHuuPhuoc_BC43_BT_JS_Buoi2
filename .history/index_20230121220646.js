@@ -27,7 +27,7 @@ function average () {
     
     var average =  sum / parseFloat(soLuongInput) ;
     
-    document.getElementById('average').value = average;
+    document.getElementById('average').value = parseFloat(average);
 }
 
 /*

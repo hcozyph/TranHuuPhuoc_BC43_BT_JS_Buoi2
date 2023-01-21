@@ -22,8 +22,8 @@ function average () {
     //output
     var average = 0;
     var soLuongInput = 5;
-
-    var sum = parseFloat(n1) + parseFloat(n2) + parseFloat(n3) + parseFloat(n4) + parseFloat(n5);
+    // var average = ( parseFloat(n1) + parseFloat(n2) + parseFloat(n3) + parseFloat(n4) + parseFloat(n5)) / 5 ;
+    var sum = parseInt(n1) + parseInt(n2) + parseInt(n3) + parseInt(n4) + parseInt(n5);
     
     var average =  sum / parseFloat(soLuongInput) ;
     
