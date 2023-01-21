@@ -32,16 +32,6 @@ function average () {
 
 //BT3: Quy đổi tiền
 function tradeMoney () {
-    //input
-    var inputUsd = document.getElementById('inputUsd').value;
-    var tyGia = 23500;
-
-    //output
-    var tradeMoney = 0;
-
-    var tradeMoney = parseInt(inputUsd) * parseInt(tyGia);
-    document.getElementById('tradeMoney').value = tradeMoney.toLocaleString() + ' VND';
-
 
 }
 

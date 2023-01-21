@@ -40,7 +40,7 @@ function tradeMoney () {
     var tradeMoney = 0;
 
     var tradeMoney = parseInt(inputUsd) * parseInt(tyGia);
-    document.getElementById('tradeMoney').value = tradeMoney.toLocaleString() + ' VND';
+    document.getElementById('tradeMoney').value = tradeMoney.toLocaleString;
 
 
 }
