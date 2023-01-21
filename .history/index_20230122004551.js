@@ -1,10 +1,10 @@
 //BT1: Tính tiền lương nhân viên
 function inputSoNgayLam () {
-    //input: 
+    //input: sô ngày làm việc, lương một ngày
     var soNgayLam = document.getElementById('soNgayLam').value;
     const luongMotNgay = 100000;
 
-    //output: 
+    //output
     var result = 0;
 
     //progress
@@ -15,20 +15,20 @@ function inputSoNgayLam () {
 
 //BT2: Tính trung bình cộng 5 số
 function average () {
-    //input:
+    //input
     var n1 = document.getElementById('n1').value;
     var n2 = document.getElementById('n2').value;
     var n3 = document.getElementById('n3').value;
     var n4 = document.getElementById('n4').value;
     var n5 = document.getElementById('n5').value;
-    //output:
+    //output
     var average = 0;
     const soLuongInput = 5;
 
     //progress
-    var sum = parseFloat(n1) + parseFloat(n2) + parseFloat(n3) + parseFloat(n4) + parseFloat(n5);
+    var sum = Number(n1) + Number(n2) + Number(n3) + Number(n4) + Number(n5);
     
-    var average =  sum / parseFloat(soLuongInput) ;
+    var average =  sum / Number(soLuongInput) ;
     
     document.getElementById('average').value = average;
 }
@@ -85,9 +85,8 @@ function tong2KySo () {
     var tong2KySo = 0;
 
     //progress
-    var hangChuc = Math.floor(Number(inputSoChuc)/10)
-    var hangDonVi = Math.floor(Number(inputSoChuc)%10)
-    var tong2KySo = parseInt(hangChuc) + parseInt(hangDonVi);
+
+    var tong2KySo = parseInt(kySo1) + parseInt(kySo2);
 
     document.getElementById('tong2KySo').value = tong2KySo;
 }
