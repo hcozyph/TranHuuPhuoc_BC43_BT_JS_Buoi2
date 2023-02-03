@@ -5,7 +5,9 @@
     margin: 0 auto;
     padding: 50px;
 }
-
+/* body input {
+    margin-right: 10px;
+} */
 .BT4 input {
     width: 20%;
 }

@@ -2,7 +2,7 @@
 function inputSoNgayLam () {
     //input: 
     var soNgayLam = document.getElementById('soNgayLam').value;
-    var luongMotNgay = document.getElementById('luongMotNgay').value;
+    const luongMotNgay = 100000;
 
     //output: 
     var result = 0;

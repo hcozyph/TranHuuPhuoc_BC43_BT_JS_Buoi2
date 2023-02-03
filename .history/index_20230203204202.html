@@ -45,33 +45,44 @@
             <!-- BT1 -->
             <div class="container">
                 <!-- BT-1 -->
-                <div class="BT1 alert alert-success">
-                    <h1 class="fs-3 fw-bold">
-                        Bài tập 1: Tính tiền lương nhân viên
-                    </h1>
+                <div class="BT1 alert alert-success text-center">
+                    <h1 class="fs-3">Bài tập 1: Tính tiền lương nhân viên</h1>
 
-                    <!-- <div class="col-4"> -->
-                    <p>Vui lòng nhập số tiền lương 1 ngày</p>
+                    <div class="col-4 text">
+                        <p>Vui lòng nhập số tiền lương 1 ngày</p>
 
-                    <input type="text" id="luongMotNgay" />
-                    <!-- </div> -->
+                        <input
+                            type="text"
+                            id="luongMotNgay"
+                            class="form-control"
+                        />
+                    </div>
 
-                    <p>Vui lòng nhập số ngày làm :</p>
-                    <input type="number" id="soNgayLam" />
+                    <div class="col-4 mt-3">
+                        <p>Vui lòng nhập số ngày làm :</p>
+
+                        <input
+                            type="number"
+                            id="soNgayLam"
+                            class="form-control"
+                        />
+                    </div>
+
                     <button
-                        class="btn btn-success"
+                        class="btn btn-success col-4 mt-4"
                         id="btnXacNhan"
                         onclick="inputSoNgayLam()"
                     >
                         Xác nhận
                     </button>
+
                     <p>Tiền lương của bạn là :</p>
                     <input type="text" id="result" />
                 </div>
 
                 <!-- BT2 -->
                 <div class="BT2 alert alert-success mt-5">
-                    <h1 class="fs-3 fw-bold">
+                    <h1 class="fs-3 mt-5">
                         Bài tập 2: Tính giá trị trung bình cho 5 số
                     </h1>
                     <p>Vui lòng nhập 5 số thực</p>
@@ -94,7 +105,7 @@
 
                 <!-- BT3 -->
                 <div class="BT3 alert alert-success mt-5">
-                    <h1 class="fs-3 fw-bold">Bài tập 3: Quy đổi tiền</h1>
+                    <h1 class="fs-3 mt-5">Bài tập 3: Quy đổi tiền</h1>
                     <p>Tỷ giá USD hiện nay là 23.500 VND</p>
                     <p>Vui lòng nhập số tiền muốn quy đổi:</p>
 
@@ -113,7 +124,7 @@
 
                 <!-- BT4 -->
                 <div class="BT4 alert alert-success mt-5">
-                    <h1 class="fs-3 fw-bold">
+                    <h1 class="fs-3 mt-5">
                         Bài tập 4: Tính diện tích & chu vi hình chữ nhật
                     </h1>
                     <p>
@@ -133,7 +144,7 @@
                         <button class="btn btn-success" onclick="chuVi()">
                             Chu vi hình chữ nhật là :
                         </button>
-                        <input type="number" id="chuVi" id="ketQua" />
+                        <input type="number" id="chuVi" />
                     </div>
 
                     <div class="dienTich mt-3">
@@ -146,7 +157,7 @@
 
                 <!-- BT5 -->
                 <div class="BT5 alert alert-success mt-5">
-                    <h1 class="fs-3 fw-bold">Bài tập 5: Tính tổng hai ký số</h1>
+                    <h1 class="fs-3 mt-5">Bài tập 5: Tính tổng hai ký số</h1>
                     <p>Vui lòng nhập một số chục (số có hai chữ số):</p>
                     <input type="number" id="inputSoChuc" />
                     <button class="btn btn-success" onclick="tong2KySo()">

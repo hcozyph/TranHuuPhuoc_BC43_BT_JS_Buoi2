@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.btvn {
+    padding-top: 0;
+    background-image: url(https://i.pinimg.com/474x/2e/b5/f8/2eb5f8c932bc50e5e757a48d0f7ed6e1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

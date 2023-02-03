@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BT JS - Buoi 1</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- font-family -->
+        <link
+            href="//fonts.googleapis.com/css2?family=Pacifico&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="//fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+
+        <!-- FontAwesome 6.2.0 CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- index.css -->
+        <link rel="stylesheet" href="./style/index.css" />
+    </head>
+
+    <body>
+        <!-- BT1 -->
+        <div class="container">
+            <!-- BT-1 -->
+            <div class="BT1">
+                <h1 class="fs-3 mt-3">Bài tập 1: Tính tiền lương nhân viên</h1>
+                <p>Tiền lương 1 ngày là 100000 VND</p>
+                <p>Vui lòng nhập số ngày làm :</p>
+                <input type="number" id="soNgayLam" />
+                <button
+                    class="btn btn-success"
+                    id="btnXacNhan"
+                    onclick="inputSoNgayLam()"
+                >
+                    Xác nhận
+                </button>
+                <p>Tiền lương của bạn là :</p>
+                <input type="text" id="result" />
+            </div>
+
+            <!-- BT2 -->
+            <div class="BT2">
+                <h1 class="fs-3 mt-5">
+                    Bài tập 2: Tính giá trị trung bình cho 5 số
+                </h1>
+                <p>Vui lòng nhập 5 số thực</p>
+
+                <p>Số thứ 1 <input type="number" id="n1" /></p>
+                <p>Số thứ 2 <input type="number" id="n2" /></p>
+                <p>Số thứ 3 <input type="number" id="n3" /></p>
+                <p>Số thứ 4 <input type="number" id="n4" /></p>
+                <p>Số thứ 5 <input type="number" id="n5" /></p>
+
+                <button
+                    class="btn btn-success"
+                    id="btnAverage"
+                    onclick="average()"
+                >
+                    Kết quả trung bình
+                </button>
+                <input type="text" id="average" />
+            </div>
+
+            <!-- BT3 -->
+            <div class="BT3">
+                <h1 class="fs-3 mt-5">Bài tập 3: Quy đổi tiền</h1>
+                <p>Tỷ giá USD hiện nay là 23.500 VND</p>
+                <p>Vui lòng nhập số tiền muốn quy đổi:</p>
+
+                <input type="number" id="inputUsd" />
+                <button
+                    class="btn btn-success"
+                    id="btnTradeMoney"
+                    onclick="tradeMoney ()"
+                >
+                    Xác nhận
+                </button>
+
+                <p>Số tiền VND đổi được là :</p>
+                <input type="text" id="tradeMoney" />
+            </div>
+
+            <!-- BT4 -->
+            <div class="BT4">
+                <h1 class="fs-3 mt-5">
+                    Bài tập 4: Tính diện tích & chu vi hình chữ nhật
+                </h1>
+                <p>
+                    Vui lòng nhập giá trị chiều dài và chiều rộng của hình chữ
+                    nhật:
+                </p>
+
+                <input type="number" id="length" placeholder="Chiều dài" />
+                <input
+                    style="margin-left: 10px"
+                    type="number"
+                    id="width"
+                    placeholder="Chiều rộng"
+                />
+
+                <div class="chuVi mt-3">
+                    <button class="btn btn-success" onclick="chuVi()">
+                        Chu vi hình chữ nhật là :
+                    </button>
+                    <input type="number" id="chuVi" />
+                </div>
+
+                <div class="dienTich mt-3">
+                    <button class="btn btn-success" onclick="dienTich()">
+                        Diện tích hình chữ nhật là :
+                    </button>
+                    <input type="number" id="dienTich" />
+                </div>
+            </div>
+
+            <!-- BT5 -->
+            <div class="BT5">
+                <h1 class="fs-3 mt-5">Bài tập 5: Tính tổng hai ký số</h1>
+                <p>Vui lòng nhập một số chục (số có hai chữ số):</p>
+                <input type="number" id="inputSoChuc" />
+                <button class="btn btn-success" onclick="tong2KySo()">
+                    Xác nhận
+                </button>
+                <p>Tổng 2 ký số của số vừa nhập là :</p>
+                <input type="number" id="tong2KySo" />
+            </div>
+        </div>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- js customize -->
+        <script src="./index.js"></script>
+    </body>
+</html>

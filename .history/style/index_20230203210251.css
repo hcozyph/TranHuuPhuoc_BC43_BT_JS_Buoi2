@@ -9,14 +9,11 @@
 .BT4 input {
     width: 20%;
 }
-.chuVi button,
-.chuVi input {
+.chuvi button {
     width: 20%;
-    margin-right: 10px;
 }
 
 .dienTich button,
 .dienTich input {
     width: 20%;
-    margin-right: 10px;
 }
